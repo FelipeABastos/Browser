@@ -185,10 +185,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites is empty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fN-7I-OHr">
+                                <rect key="frame" x="83" y="429.5" width="248" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="3fN-7I-OHr" firstAttribute="centerY" secondItem="HEL-oA-9JZ" secondAttribute="centerY" id="0rh-hZ-9Ps"/>
                             <constraint firstItem="W3c-jC-saD" firstAttribute="leading" secondItem="PJF-Xd-V6m" secondAttribute="leading" constant="39" id="9Cz-ns-1r3"/>
+                            <constraint firstItem="3fN-7I-OHr" firstAttribute="centerX" secondItem="HEL-oA-9JZ" secondAttribute="centerX" id="CSo-1F-Kvm"/>
                             <constraint firstItem="RuS-Qz-OjX" firstAttribute="trailing" secondItem="HEL-oA-9JZ" secondAttribute="trailingMargin" id="DfL-Hg-5gh"/>
                             <constraint firstItem="RuS-Qz-OjX" firstAttribute="bottom" secondItem="PJF-Xd-V6m" secondAttribute="bottom" id="LTM-k3-3wd"/>
                             <constraint firstItem="RuS-Qz-OjX" firstAttribute="leading" secondItem="ACW-ry-Cla" secondAttribute="leading" id="Ny3-WQ-GAP"/>
@@ -200,6 +208,7 @@
                         <viewLayoutGuide key="safeArea" id="PJF-Xd-V6m"/>
                     </view>
                     <connections>
+                        <outlet property="lblFavoriteEmpty" destination="3fN-7I-OHr" id="f5x-mm-6je"/>
                         <outlet property="tbUrl" destination="RuS-Qz-OjX" id="sfi-Wd-qfy"/>
                     </connections>
                 </viewController>

@@ -10,6 +10,8 @@ import UIKit
 
 class SavedUrlViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet var lblFavoriteEmpty: UILabel?
+    
     var urlSaved: Array<Url> = []
     
     @IBOutlet var tbUrl: UITableView?
@@ -22,6 +24,13 @@ class SavedUrlViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         
         urlSaved = get()
+        
+        if urlSaved.count == 0 {
+            lblFavoriteEmpty?.alpha = 0.1
+        }else{
+            lblFavoriteEmpty?.alpha = 0
+        }
+        
         tbUrl?.reloadData()        
     }
     
