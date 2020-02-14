@@ -25,7 +25,9 @@ WKNavigationDelegate
 * **Felipe Bastos** 
 
 ## App working
-<img align="left" width="270" height="540" src="https://github.com/FelipeABastos/Browser/blob/master/BrowserOrigianl.gif"> 
+<img align="left" width="270" height="540" src="https://github.com/FelipeABastos/Browser/blob/master/GoingBackAndFoward.gif"> 
+
+<img align="center" width="270" height="540" src="https://github.com/FelipeABastos/Browser/blob/master/SavingToFavorites.gif"> 
 
 
 
